@@ -2,7 +2,8 @@
 
 
 @section('content')
-    <a href="/logout">My account</a>
+    <a href="/profile">My account</a> <br/>
+    <a href="/users">Users</a> <br/>
     <a href="/logout">Logout</a>
 
     <div style="margin:0px auto;width:500px;text-align: center;">

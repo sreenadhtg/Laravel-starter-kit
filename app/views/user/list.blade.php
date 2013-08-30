@@ -2,7 +2,7 @@
 
 @section('content')
     @foreach($users as $user)
-        <p>{{ $user->name }}</p>
+        <a href="/user/{{$user->id}}">{{ $user->name }}</a> <br/>
     @endforeach
 @stop
 

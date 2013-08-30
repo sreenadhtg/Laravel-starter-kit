@@ -28,7 +28,8 @@ Route::group(array('before' => 'auth'), function()
 {
     
     Route::get('home','HomeController@showWelcome');
-    Route::get('user/{id}', 'UserController@showProfile');
+    Route::get('user/{id}', 'UserController@showUserInfo');
+    Route::get('profile', 'UserController@showProfile');
     
     
     Route::get('users', array('before' => 'authcheck',function() {

@@ -1,11 +1,9 @@
-
-
 @extends('layouts.master')
 
 
 @section('content')
-  <h1>Profile....</h1>
+  <h3>My Profile</h3>
 
-    <?php echo $user->name?> <br />
-    <?php echo $user->email?>
+    Name : {{$user->name}} <br />
+    Email : {{$user->email}}
 @stop

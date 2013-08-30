@@ -6,10 +6,17 @@ class UserController extends BaseController {
     /**
      * Show the profile for the given user.
      */
-    public function showProfile($id)
+    
+    
+    public function showProfile()
+    {
+        return View::make('user.profile', array('user' => Auth::user()));
+    }
+        
+    public function showUserInfo($id)
     {
         $user = User::find($id);
-        return View::make('user.profile', array('user' => $user));
+        return View::make('user.info', array('user' => $user));
     }
     
     public function showLogin() {
