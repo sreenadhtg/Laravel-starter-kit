@@ -1,6 +1,9 @@
 <html>
     <body>
-        <a href="/home">Home</a>
+        
+        <?php if (Auth::check()) {?>
+            <a href="/home">Home</a>
+        <?php } ?>
         <div class="container">
             @yield('content')
         </div>
